@@ -697,17 +697,22 @@ considered __removed__.
     {
       "lines" : [
         {
+          "id"          : "1234567890",
           "source_guid" : "YOUR_GUID_HERE",
+          "created_at"  : 1302623328,
+          "user_id"     : "1234567890",
+          "group_id"    : "1234567890",
+          "avatar_url"  : "http://example.com/anne.png"
+          "name"        : "Anne",
           "text"        : "Hello world",
           "picture_url" : null,
           "location"    : {
-            "lat"                    : "40.738206",
-            "lng"                    : "-73.993285",
-            "name"                   : "GroupMe HQ",
-            "foursquare_venue_id"    : "1234567890",
-            "foursquare_checkin"     : true
-          }
-        },
+            "lat"                   : "40.738206",
+            "lng"                   : "-73.993285",
+            "name"                  : "GroupMe HQ",
+            "foursquare_venue_id"   : "1234567890",
+            "foursquare_checkin"    : true
+          },
         ...
       ]
     }
