@@ -667,7 +667,50 @@ considered __removed__.
   </tr>
 </table>
 
-#### Location
+
+### List
+
+<table>
+  <tr>
+    <th>URL</th>
+    <td>https://api.groupme.com/clients/groups/GROUP_ID/lines</td>
+  </tr>
+  <tr>
+    <th>Method</th>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <th>Requires Auth</th>
+    <td>Yes</td>
+  </tr>
+</table>
+
+#### Request
+
+    GET https://api.groupme.com/clients/groups/GROUP_ID/lines
+      ?client_id=YOUR_CLIENT_ID
+      &token=YOUR_ACCESS_TOKEN
+      
+#### Response
+
+    HTTP/1.1 200 OK
+    {
+      "lines" : [
+        {
+          "source_guid" : "YOUR_GUID_HERE",
+          "text"        : "Hello world",
+          "picture_url" : null,
+          "location"    : {
+            "lat"                    : "40.738206",
+            "lng"                    : "-73.993285",
+            "name"                   : "GroupMe HQ",
+            "foursquare_venue_id"    : "1234567890",
+            "foursquare_checkin"     : true
+          }
+        },
+        ...
+      ]
+    }
 
 ### Create
 
