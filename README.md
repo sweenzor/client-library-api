@@ -69,6 +69,7 @@ You can request resources using your access token:
 
     GET https://api.groupme.com/clients/groups
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
 
 Most endpoints require authentication. We indicate which do not require your
@@ -221,6 +222,7 @@ Get a list of all your groups.
 
     GET https://api.groupme.com/clients/groups
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
 
 #### Response
@@ -312,6 +314,7 @@ This can be (in order of strength):
 
     POST https://api.groupme.com/clients/groups
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
     {
       group : {
@@ -373,6 +376,7 @@ Create a new group.
 
   DELETE https://api.groupme.com/clients/groups/GROUP_ID
     ?client_id=YOUR_CLIENT_ID
+    &client_secret=YOUR_CLIENT_SECRET    
     &token=YOUR_ACCESS_TOKEN
 
 #### Response
@@ -479,6 +483,7 @@ Get a list of all memberships for a group.
 
     GET https://api.groupme.com/clients/groups/GROUP_ID/memberships
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
 
 #### Response
@@ -558,6 +563,7 @@ Add a user to the group.
 
     POST https://api.groupme.com/clients/groups/GROUP_ID/memberships
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
     {
       membership : {
@@ -612,6 +618,7 @@ considered __removed__.
 
     DELETE https://api.groupme.com/clients/groups/GROUP_ID/memberships/SOME_MEMBERSHIP_ID
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
 
 #### Response
@@ -689,6 +696,7 @@ considered __removed__.
 
     GET https://api.groupme.com/clients/groups/GROUP_ID/lines
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
       
 #### Response
@@ -741,6 +749,7 @@ Add a line to the group.
 
     POST https://api.groupme.com/clients/groups/GROUP_ID/lines
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
     {
       line : {
@@ -805,6 +814,7 @@ Conferences call each member of the group to start a conference call.
 
     POST https://api.groupme.com/clients/groups/GROUP_ID/conferences
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
 
 #### Response
@@ -834,6 +844,7 @@ User names can be updated as follows:
 
     PUT https://api.groupme.com/clients/users/USER_ID
       ?client_id=YOUR_CLIENT_ID
+      &client_secret=YOUR_CLIENT_SECRET      
       &token=YOUR_ACCESS_TOKEN
       &user[name]=NEW_USER_NAME
 
